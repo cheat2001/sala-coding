@@ -4,14 +4,14 @@ function VideoCard({image,path}) {
   const navigate=useNavigate('');
     // const tags=image.tags.split(',');
     return (
-      <div onClick={()=>navigate(path+"/videoplayer")} className='cursor-pointer max-w-sm shadow-2xl overflow-hidden hover:scale-105 duration-500'>
+      <div onClick={()=>navigate(path+"videoplayer")} className='cursor-pointer max-w-sm shadow-2xl overflow-hidden hover:scale-105 duration-500'>
       <img src={image.webformatURL} alt="" className='w-full h-[200px] object-cover'/>
       <div>
          <div className='px-6 py-4'>
-           <div className='font-bold text-white text-xl-mb-2'>
-               Title : {image.user}
+           <div className='font-bold text-white text-xl mb-2'>
+               {image.user}
            </div>
-           <ul className='text-[#173e43]'>
+           <ul className='text-[#86dce7]'>
              <li>
               <strong>Views:</strong>
               {image.views}

@@ -31,7 +31,7 @@ function HomeContainer({search}) {
       {!isLoading && images.length===0 &&<h1 className="text-6xl text-center mx-auto mt-32">No Images Found</h1> }
       {
 
-   isLoading?<h3 className="text-3xl text-center mx-auto mt-32">Loading...</h3>:
+   isLoading?<h3 className="text-3xl text-center mx-auto mt-32 text-[white]">Loading...</h3>:
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  sm:auto-rows-fr gap-4 place-content-center">
         {images.map(image=>(
           <VideoCardHome key={image.id} image={image} path={pathname}/>

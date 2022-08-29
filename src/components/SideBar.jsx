@@ -15,7 +15,7 @@ function SideBar() {
    }
 
   return (
-    <div className='z-10 border-r-[0.5px] border-[#4d7c62] shadow-lg fixed w-[70px]  h-[100vh] bg-[#173e43] flex flex-col items-center pt-[70px]'>
+    <div className='top-0 z-10 border-r-[0.5px] border-[#4d7c62] shadow-lg fixed w-[70px]  h-[100vh] bg-[#173e43] flex flex-col items-center pt-[70px]'>
       <NavLink style={navLinkStyle} to="/"  className="w-[100%] p-5 hover:bg-purple-500 duration-300">
         <img src={Home} alt="" className='w-[50px]'/>
       </NavLink>
