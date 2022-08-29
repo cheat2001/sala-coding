@@ -27,12 +27,12 @@ function Container({search}) {
     .catch((err)=>console.log(err))
   },[search])
   return (
-     <div className="container mx-auto  pt-[100px] pl-[90px] sm:pl[70px] pb-[100px] pr-[20px]">
+     <div className="place-items-center container mx-auto px-[20px]  pt-[100px] sm:pl-[90px]  pb-[100px] ">
       {!isLoading && images.length===0 &&<h1 className="text-6xl text-center mx-auto mt-32">No Images Found</h1> }
       {
 
    isLoading?<h3 className="text-3xl text-center mx-auto mt-32 text-white">Loading...</h3>:
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  sm:auto-rows-fr gap-4 place-content-center">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  sm:auto-rows-fr gap-4 ">
         {images.map(image=>(
           <VideoCard key={image.id} image={image} path={pathname}/>
         ))}

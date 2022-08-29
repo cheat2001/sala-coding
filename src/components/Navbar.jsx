@@ -8,7 +8,7 @@ function Navbar({navBarObj}) {
   };
   
   return (
-    <div className="shadow-lg w-full h-[70px] flex items-center bg-[#173e43] pl-[90px]">
+    <div className="pl-[0] justify-center shadow-lg w-full h-[70px] flex items-center bg-[#173e43] ">
          <div className="flex text-white">
             {navBarObj&&navBarObj.map(nbo=>(
                <NavLink className="p-[10px]" key={nbo.id}  style={navLinkStyle} to={nbo.link}>{nbo.title}</NavLink> 

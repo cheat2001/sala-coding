@@ -24,7 +24,7 @@ function HomeContainer({search}) {
     .catch((err)=>console.log(err))
   },[term])
   return (
-     <div className="container mx-auto  pt-[50px] pl-[90px] sm:pl[70px] pb-[100px]">
+     <div className="place-items-center container mx-auto px-[20px]  pt-[100px] sm:pl-[90px]  pb-[100px] ">
       <VideoSearch searchText={(text)=>setTerm(text)}/>
 
 
